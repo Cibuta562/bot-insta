@@ -42,6 +42,7 @@ counter = 0
 max_iterations = 20
 
 list_of_coms = ["Keep up the good posts! 📈", "Great post! 👀", "This post is so well made! 🔥"]
+list_of_coms = random.sample(list_of_coms,len(list_of_coms))
 coms_index = random.randint(0,len(list_of_coms)-1)
 chosen_coms = list_of_coms[coms_index]
 
