@@ -18,7 +18,7 @@ while oki < ma_iterations:
         pyautogui.moveTo(1137, 234, duration=1.4)
         pyautogui.click()
 
-        list_of_has = ["#digitalmarketingagency", "#marketingagency", "#digitalmarketing"]
+        list_of_has = ["#socialmediamarketing", "#digitalmarketingagency",  "#digitalmarketingtips "]
        # list_random_hastags = random.sample(list_of_has, len(list_of_has))
 
 
@@ -31,7 +31,6 @@ while oki < ma_iterations:
         pyautogui.moveTo(1227, 372, duration=1.8)
         pyautogui.click()
         pyautogui.moveTo(1767, 193, duration=2.3)
-        pyautogui.click(1767, 193)
         time.sleep(2.1)
 
         ######################
@@ -40,14 +39,17 @@ while oki < ma_iterations:
         pause_time = 0.5
 
         for i in range(num_steps):
-         pyautogui.scroll(-174)
-         time.sleep(pause_time)
+            pyautogui.scroll(-230)
+            time.sleep(pause_time)
 
         time.sleep(3.2)
-        pyautogui.moveTo(1205, 505, duration=1.6)
+        pyautogui.moveTo(1713, 523, duration=1.6)
         pyautogui.click()
+        pyautogui.moveTo(1862, 565, duration=1.6)
+        pyautogui.click()
+
         counter = 0
-        max_iterations = 3
+        max_iterations = 20
 
         list_of_coms = ["Keep up the good posts! 📈", "Great post! 👀", "This post is so well made! 🔥"]
         list_of_coms = random.sample(list_of_coms, len(list_of_coms))
@@ -79,7 +81,7 @@ while oki < ma_iterations:
         pause_time = 0.4
 
         for i in range(num_steps):
-         pyautogui.scroll(245)
+         pyautogui.scroll(230)
         pyautogui.click()
 
         print("Iteratio", counter + 1)
